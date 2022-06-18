@@ -156,7 +156,7 @@ img {
 }
 
 .themeModeSwitcher {
-    width: 120px;
+    width: 130px;
     height: fit-content;
     margin: auto ;
 }
@@ -183,7 +183,7 @@ img {
     transform: translate(27%, -40%);
 }
 #dark .react-switch-handle {
-    transform: translateX(93px) !important;
+    transform: translateX(105px) !important;
 }
 
 
