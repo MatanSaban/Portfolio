@@ -63,4 +63,37 @@
     background: var(--color-primary-lmode);
     color: var(--color-bg-lmode);
 }
+
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width:1024px) {
+    #dark nav a {
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        display: flex;
+        color: var(--color-light);
+        font-size: 1.1rem;
+    }
+    #light nav a {
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        display: flex;
+        color: var(--color-light);
+        font-size: 1.1rem;
+    }        
+}
+/* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width:600px) {
+    #dark nav a {
+        padding: 0.5rem;
+    }
+    #light nav a {
+        padding: 0.5rem;
+    }
+}
+
+
+
 /* ================== End Of Nav ===================== */
