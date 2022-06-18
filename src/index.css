@@ -181,6 +181,7 @@ img {
     left: 0%;
     width: 100%;
     transform: translate(27%, -40%);
+    color: white;
 }
 #dark .react-switch-handle {
     transform: translateX(105px) !important;
