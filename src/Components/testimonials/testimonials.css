@@ -1,0 +1,76 @@
+/* ================== Testimonials ===================== */
+.container.testimonials__container {
+    padding-bottom: 4rem;
+}
+#dark .client__avatar {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+#dark .testimonial {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+#dark .client__review {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+#dark .swiper-pagination-clickable .swiper-pagination-bullet-active {
+    background: var(--color-primary);
+}
+
+/* LIGHT */
+
+#light .client__avatar {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant-lmode);
+}
+#light .testimonial {
+    background: var(--color-bg-variant-lmode);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+#light .client__review {
+    color: var(--color-white-lmode);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+#light .swiper-pagination-clickable .swiper-pagination-bullet-active {
+    background: var(--color-primary-lmode);
+}
+#light .swiper-button-prev , #light .swiper-button-next {
+    color: var(--color-primary-lmode);
+}
+
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width:1024px) {
+}
+/* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width:600px) {
+    .testimonials__container {
+        width: var(--container-width-sm);
+    }
+    .client__review {
+        width: var(--container-width-sm);
+    }
+}
+
+/* ================== End Of Testimonials ===================== */

@@ -27,7 +27,8 @@ const Testimonials = () => {
                         slidesPerView={1}
                         pagination={{ clickable: true }}
                         // scrollbar={{ draggable: true }}
-                        navigation
+                        navigation={true}
+                        loop={true}
                 >
                     <SwiperSlide>
                         <TestiItem

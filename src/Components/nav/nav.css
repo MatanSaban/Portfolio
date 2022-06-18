@@ -1,0 +1,66 @@
+/* ================== Nav ===================== */
+#dark nav {
+    background: rgba(0, 0,0,0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+#dark nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+#dark nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+#dark nav a.active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/* LIGHT */
+
+#light nav {
+    background: rgba(0, 0,0,0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+#light nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+#light nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+}
+#light nav a.active {
+    background: var(--color-primary-lmode);
+    color: var(--color-bg-lmode);
+}
+/* ================== End Of Nav ===================== */

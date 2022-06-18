@@ -1,7 +1,7 @@
 import {BsLinkedin} from 'react-icons/bs';
 import {BsFacebook} from 'react-icons/bs';
 import {GoMarkGithub} from 'react-icons/go';
-import {BsTelephoneForward} from 'react-icons/bs';
+import {BsFillTelephoneOutboundFill} from 'react-icons/bs';
 import {RiWhatsappFill} from 'react-icons/ri';
 import {BsEnvelopeFill} from 'react-icons/bs';
 
@@ -11,7 +11,7 @@ const HeaderSocials = () => {
             <a href="https://linkedin.com/in/matansaban"><BsLinkedin/></a>
             <a href="https://github.com/in/matansaban"><GoMarkGithub/></a>
             <a href="https://facebook.com/in/matansaban"><BsFacebook/></a>
-            <a href="tel:+972527984133"><BsTelephoneForward/></a>
+            <a href="tel:+972527984133"><BsFillTelephoneOutboundFill/></a>
             <a href="https://wa.me/+972527984133"><RiWhatsappFill/></a>
             <a href="mailto:matansaban28@gmail.com"><BsEnvelopeFill/></a>
         </div>

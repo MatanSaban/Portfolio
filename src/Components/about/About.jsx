@@ -3,6 +3,7 @@ import ME from "../../assets/profileimage.jpg";
 import { FiAward } from "react-icons/fi";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { BsTelephoneOutbound } from "react-icons/bs";
 import AboutCard from "./AboutCard";
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
                         doloremque fugiat ipsa nostrum voluptatibus quos
                         commodi, debitis quis!
                     </p>
-                    <a href="#contact" className="btn btn-primary">Let's Talk</a>
+                    <a href="#contact" className="btn btn-primary">Let's Talk <BsTelephoneOutbound/></a>
                 </div>
             </div>
         </section>
