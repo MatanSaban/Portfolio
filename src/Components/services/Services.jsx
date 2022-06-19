@@ -2,10 +2,16 @@ import "./services.css";
 import ServicesCard from "./ServicesCard";
 import { BiCheck } from "react-icons/bi";
 import ServicesListItem from "./ServicesListItem";
+import { useRef } from "react";
+import {useInViewport} from 'react-in-viewport';
 
-const Services = () => {
+const Services = (props) => {
+    const myRef = useRef();
+    const {inViewport} = useInViewport(myRef);
+
     return (
-        <section id="services">
+        <section id="services" ref={myRef}>
+            {inViewport && props.checkNav('services')}
             <h5>What I Offer</h5>
             <h2>Services</h2>
 

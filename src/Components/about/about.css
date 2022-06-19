@@ -1,7 +1,7 @@
 /* ================== About ===================== */
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 25% 60%;
     gap: 15%;
 }
 #dark .about__me {
@@ -18,12 +18,15 @@ overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
 }
-.about__me img:hover {
+#dark .about__me img:hover {
+    transform: rotate(0);
+}
+#light .about__me img:hover {
     transform: rotate(0);
 }
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 #dark .about__card {

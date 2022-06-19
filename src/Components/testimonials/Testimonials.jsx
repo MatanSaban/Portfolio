@@ -13,11 +13,18 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useRef } from "react";
+import { useInViewport } from "react-in-viewport";
 
 
-const Testimonials = () => {
+
+const Testimonials = (props) => {
+    const myRef = useRef();
+    const {inViewport} = useInViewport(myRef);
+
     return (
-        <section id="testimonials">
+        <section id="testimonials" ref={myRef}>
+            {inViewport && props.checkNav('testimonials')}
             <h5>Reviews From Clients</h5>
             <h2>Testimonials</h2>
             <div className="container testimonials__container">
@@ -26,7 +33,6 @@ const Testimonials = () => {
                         spaceBetween={40}
                         slidesPerView={1}
                         pagination={{ clickable: true }}
-                        // scrollbar={{ draggable: true }}
                         navigation={true}
                         loop={true}
                 >

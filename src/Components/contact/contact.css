@@ -38,7 +38,7 @@ form {
     flex-direction: column;
     gap: 1.2rem;
 }
-#dark input, textarea {
+#dark input, #dark textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -61,7 +61,7 @@ form {
     background: transparent;
     border-color: var(--color-primary-variant-lmode);
 }
-#light input, textarea {
+#light input, #light textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;

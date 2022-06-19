@@ -7,9 +7,8 @@ import Nav from "./Components/nav/Nav.jsx";
 import Portfolio from "./Components/portfolio/Portfolio.jsx";
 import Services from "./Components/services/Services.jsx";
 import Testimonials from "./Components/testimonials/Testimonials.jsx";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import ReactSwitch from "react-switch";
-import {AiOutlineCheckCircle} from 'react-icons/ai'
 import {AiFillCheckCircle} from 'react-icons/ai'
 
 export const ThemeContext = createContext(null);
@@ -21,11 +20,22 @@ function App() {
         setTheme((curr) => (curr === "light" ? "dark" : "light"));
     };
 
+
+    const [sectionOnScroll, setSectionOnScroll] = useState();
+
+
+    const changeNavIconActive = (activeNavIcon) => {
+      setSectionOnScroll(activeNavIcon);
+    }
+    useEffect(() => {
+      
+    },[setSectionOnScroll])
+
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
             <div className="App" id={theme}>
                 <>
-                    <Header />
+                    <Header checkNav={changeNavIconActive}/>
                     <Nav
                         themeMode={
                             <ReactSwitch
@@ -40,13 +50,14 @@ function App() {
                                 }
                             />
                         }
+                        sectionOnScroll={sectionOnScroll}
                     />
-                    <About />
-                    <Experience />
-                    <Services />
-                    <Portfolio />
-                    <Testimonials />
-                    <Contact />
+                    <About checkNav={changeNavIconActive}/>
+                    <Experience checkNav={changeNavIconActive}/>
+                    {/* <Services checkNav={changeNavIconActive}/> */}
+                    <Portfolio checkNav={changeNavIconActive}/>
+                    {/* <Testimonials checkNav={changeNavIconActive}/> */}
+                    <Contact checkNav={changeNavIconActive}/>
                     <Footer />
                 </>
             </div>

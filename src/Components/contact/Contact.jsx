@@ -8,9 +8,16 @@ import ContactOpt from './ContactOpt';
 import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com'
 
-const Contact = () => {
+import { useInViewport } from "react-in-viewport";
+
+
+const Contact = (props) => {
     const form = useRef();
     const [message, setMessage] = useState(false);
+
+    const myRef = useRef();
+    const {inViewport} = useInViewport(myRef);
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -26,7 +33,8 @@ const Contact = () => {
 
       
     return ( 
-        <section id='contact'>
+        <section id='contact' ref={myRef}>
+            {inViewport && props.checkNav('contact')}
             <h5>Get In Touch</h5>
             <h2>Contact Me</h2>
 

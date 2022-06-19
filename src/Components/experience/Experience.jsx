@@ -1,11 +1,17 @@
 import './experience.css'
 import ExpDetail from './ExpDetail';
 import {BsPatchCheckFill} from 'react-icons/bs'
+import { useRef } from 'react';
+import {useInViewport} from 'react-in-viewport'
 
 
-const Experience = () => {
+const Experience = (props) => {
+
+    const myRef = useRef();
+    const {inViewport} = useInViewport(myRef);
+
     return ( 
-        <section id='experience'>
+        <section id='experience' ref={myRef}>
             <h5>What Skills I Have</h5>
             <h2>My Experience</h2>
             <div className='container experience__container'>
@@ -30,6 +36,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
+            {inViewport && props.checkNav('experience')}
         </section>
      );
 }

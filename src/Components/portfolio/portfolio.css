@@ -1,51 +1,25 @@
-/* ================== Portfolio ===================== */
+ /* ================== Portfolio ===================== */
 
-section .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+.container.portfolio__container {
+    width: 500px;
 }
-#dark .portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
+.container.portfolio__container img {
+    height: 200px;
+}
+.coverLayer h3, .coverLayer .portfolio__item-cta {
+    opacity: 0;
     transition: var(--transition);
 }
-#dark .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-.portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
-    height: 150px;
-}
-.portfolio__item h3 {
-    margin: 1.2rem 0 1.2rem;
-}
-.portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.coverLayer:hover h3 , .coverLayer:hover .portfolio__item-cta {
+    opacity: 1;
 }
 
-/* LIGHT */
-
-#light .portfolio__item {
-    background: var(--color-bg-variant-lmode);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-#light .portfolio__item:hover {
-    border-color: var(--color-primary-variant-lmode);
-    background: transparent;
-}
+#light .coverLayer h3 {
+    color: white;
+} 
 
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
     #dark section .portfolio__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
@@ -54,17 +28,9 @@ section .portfolio__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
     }
-}
+} */
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
-@media screen and (max-width:600px) {
-    #dark section .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    #light section .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
+/* @media screen and (max-width:600px) {
+} */
 
 /* ================== End Of Portfolio ===================== */

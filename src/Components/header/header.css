@@ -5,11 +5,18 @@ header {
     overflow: hidden;
 }
 .header__container {
+    /* background-image: url(https://i.vimeocdn.com/video/579679891-225df720fa964391a5a6515d8c524dc85edcf2919dba667a9cd63b22151c6206-d?mw=1300&mh=732);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw; */
     text-align: center;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 /* ====== CTA ====== */
 .cta {
     margin-top: 2.5rem;
@@ -24,8 +31,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 50px;
     bottom: 3rem;
 }
 #dark .header__socials::after {
