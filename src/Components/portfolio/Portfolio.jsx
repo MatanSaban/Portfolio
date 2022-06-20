@@ -1,4 +1,5 @@
 import "./portfolio.css";
+import blackjack from "../../assets/blackjack.png";
 import IMG from "../../assets/profileimage.jpg";
 import PortfolioItem from "./PortfolioItem";
 import { useRef } from "react";
@@ -34,10 +35,11 @@ const Portfolio = (props) => {
                 >
                     <SwiperSlide>
                         <PortfolioItem
-                            imageSrc={IMG}
-                            title={"This is a portfolio item title"}
-                            github={"https://github.com/matansaban"}
-                            liveDemo={"https://github.com"}
+                            imageSrc={blackjack}
+                            title={"BlackJack Game"}
+                            github={"https://github.com/MatanSaban/BlackJackGame"}
+                            liveDemo={"https://blackjackmatan.herokuapp.com/"}
+                            description={'A BlackJack Game Against The Computer'}
                         />
                     </SwiperSlide>
                     <SwiperSlide>
