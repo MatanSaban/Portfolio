@@ -86,96 +86,6 @@ section{
 header {
     min-height: 100vh;
 }
-#dark .about__text {
-    position: relative;
-    transition: var(--transition);
-    height: 65%;
-    overflow: unset;
-}
-#dark .about__text.partlyHiddenText {
-    height: 30%;
-    overflow: hidden;
-    position: relative;
-}
-#dark .about__text p {
-    transition: var(--transition);
-}
-#dark .about__text.partlyHiddenText p {
-    height: 30%;
-    transition: var(--transition);
-}
-#dark .readMore {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    box-shadow: 0px -40px 10px 20px var(--color-bg);
-    padding: 10px;
-    /* margin-bottom: 10px; */
-    cursor: pointer;
-    background-color: var(--color-bg);
-    color: var(--color-primary);
-    font-weight: 600;
-    font-size: 1rem;
-}
-#dark .hideText {
-    position: absolute;
-    left: 50%;
-    bottom: -50px;
-    transform: translate(-50%);
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: var(--color-bg);
-    color: var(--color-primary);
-    font-weight: 600;
-    font-size: 1rem;
-
-}
-#light .about__text {
-    position: relative;
-    transition: var(--transition);
-    height: 65%;
-    overflow: unset;
-}
-#light .about__text.partlyHiddenText {
-    height: 30%;
-    overflow: hidden;
-    position: relative;
-}
-#light .about__text p {
-    transition: var(--transition);
-}
-#light .about__text.partlyHiddenText p {
-    height: 30%;
-    transition: var(--transition);
-}
-#light .readMore {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    box-shadow: 0px -40px 15px 20px rgb(255, 255, 255);
-    padding: 10px;
-    cursor: pointer;
-    background-color: var(--color-bg-lmode);
-    color: var(--color-primary);
-    font-weight: 600;
-    font-size: 1rem;
-
-}
-#light .hideText {
-    position: absolute;
-    left: 50%;
-    bottom: -50px;
-    transform: translate(-50%);
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: var(--color-primary);
-    color: var(--color-bg-lmode);
-    font-weight: 600;
-    font-size: 1rem;
-
-}
 
 
 #light section > h2 ,#light section > h5 {
@@ -324,12 +234,6 @@ img {
     #dark section > h2 {
         margin-bottom: 2rem;
     }
-    #dark .themeModeSwitcher {
-        position: fixed !important;
-        bottom: 55px !important;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
     /* LIGHT */
     #light .container {
         width: var(--container-width-sm);
@@ -337,106 +241,18 @@ img {
     #light section > h2 {
         margin-bottom: 2rem;
     }
-    #light .themeModeSwitcher {
+
+    #dark .themeModeSwitcher {
         position: fixed !important;
         bottom: 55px !important;
         left: 50%;
         transform: translate(-50%, 0);
     }
-
-
-    #dark .about__text {
-        position: relative;
-        transition: var(--transition);
-        height: 65%;
-        overflow: unset;
-        margin-bottom: 100px;
-    }
-    #dark .about__text.partlyHiddenText {
-        height: 10%;
-        overflow: hidden;
-        position: relative;
-    }
-    #dark .about__text p {
-        transition: var(--transition);
-    }
-    #dark .about__text.partlyHiddenText p {
-        height: 10%;
-        transition: var(--transition);
-    }
-    #dark .readMore {
-        position: absolute;
-        bottom: 0%;
-        left: 0;
-        width: 100%;
-        box-shadow: 0px 0 15px 20px var(--color-bg);
-        padding: 10px;
-        /* margin-bottom: 10px; */
-        cursor: pointer;
-        background-color: var(--color-bg);
-        color: var(--color-primary);
-        font-weight: 600;
-        font-size: 1rem;
-    }
-    #dark .hideText {
-        position: absolute;
+    #light .themeModeSwitcher {
+        position: fixed !important;
+        bottom: 55px !important;
         left: 50%;
-        bottom: -50px;
-        transform: translate(-50%);
-        padding: 10px;
-        border-radius: 15px;
-        cursor: pointer;
-        background-color: var(--color-bg);
-        color: var(--color-primary);
-        font-weight: 600;
-        font-size: 1rem;
-    
-    }
-    #light .about__text {
-        position: relative;
-        transition: var(--transition);
-        height: 65%;
-        overflow: unset;
-    }
-    #light .about__text.partlyHiddenText {
-        height: 30%;
-        overflow: hidden;
-        position: relative;
-    }
-    #light .about__text p {
-        transition: var(--transition);
-    }
-    #light .about__text.partlyHiddenText p {
-        height: 30%;
-        transition: var(--transition);
-    }
-    #light .readMore {
-        position: absolute;
-        bottom: 0%;
-        width: 100%;
-        box-shadow: 0px -40px 15px 20px rgb(255, 255, 255);
-        padding: 10px;
-        border-radius: 0 0 15px 15px;
-        cursor: pointer;
-        background-color: var(--color-bg-lmode);
-        color: var(--color-primary);
-        font-weight: 600;
-        font-size: 1rem;
-    
-    }
-    #light .hideText {
-        position: absolute;
-        left: 50%;
-        bottom: -50px;
-        transform: translate(-50%);
-        padding: 10px;
-        border-radius: 15px;
-        cursor: pointer;
-        background-color: var(--color-primary);
-        color: var(--color-bg-lmode);
-        font-weight: 600;
-        font-size: 1rem;
-    
+        transform: translate(-50%, 0);
     }
     
 }

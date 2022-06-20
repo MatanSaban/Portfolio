@@ -1,7 +1,7 @@
 import About from "./Components/about/About.jsx";
 import Header from "./Components/header/Header.jsx";
 import Contact from "./Components/contact/Contact.jsx";
-import Experience from "./Components/experience/Experience.jsx";
+import Skills from "./Components/skills/Skills.jsx";
 import Footer from "./Components/footer/Footer.jsx";
 import Nav from "./Components/nav/Nav.jsx";
 import Portfolio from "./Components/portfolio/Portfolio.jsx";
@@ -53,7 +53,7 @@ function App() {
                         sectionOnScroll={sectionOnScroll}
                     />
                     <About checkNav={changeNavIconActive}/>
-                    <Experience checkNav={changeNavIconActive}/>
+                    <Skills checkNav={changeNavIconActive}/>
                     {/* <Services checkNav={changeNavIconActive}/> */}
                     <Portfolio checkNav={changeNavIconActive}/>
                     {/* <Testimonials checkNav={changeNavIconActive}/> */}

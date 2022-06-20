@@ -13,8 +13,8 @@
     place-items: center;
 }
 #dark .about__me img {
-border-radius: 2rem;
-overflow: hidden;
+    border-radius: 2rem;
+    overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
 }
@@ -54,13 +54,8 @@ overflow: hidden;
     font-size: 0.7rem;
     color: var(--color-light);
 }
-#dark .about__content p {
-    margin: 2rem 0 2.6rem;
-    color: var(--color-light);
-}
 
 /* LIGHT */
-
 
 #light .about__me {
     width: 100%;
@@ -71,12 +66,11 @@ overflow: hidden;
     place-items: center;
 }
 #light .about__me img {
-border-radius: 2rem;
-overflow: hidden;
+    border-radius: 2rem;
+    overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
 }
-
 
 #light .about__card {
     background: var(--color-bg-variant-lmode);
@@ -100,12 +94,86 @@ overflow: hidden;
     font-size: 0.7rem;
     color: var(--color-white-lmode);
 }
-#light .about__content p {
-    margin: 2rem 0 2.6rem;
-    color: var(--color-white-lmode);
+
+#dark .about__text {
+    height: 500px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
 }
+#dark .about__text p {
+    transition: all 0.3s ease;
+}
+#dark .about__text.partlyShown {
+    height: 150px;
+    transition: all 0.3s ease;
+}
+#dark .about__text.partlyShown p {
+    height: 100px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+#dark .partlyShown .showMore {
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 25px 25px var(--color-bg);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg-variant);
+    transition: all 0.3s ease;
+}
+#dark .about__text .showLess {
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 0 0 transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg-variant);
+    transition: all 0.3s ease;
+}
+
+/* LIGHT */
+#light .about__text {
+    height: 500px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+#light .about__text p {
+    transition: all 0.3s ease;
+}
+#light .about__text.partlyShown {
+    height: 150px;
+    transition: all 0.3s ease;
+}
+#light .about__text.partlyShown p {
+    height: 100px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+#light .partlyShown .showMore {
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 25px 25px var(--color-bg-lmode);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg-variant);
+    transition: all 0.3s ease;
+}
+#light .about__text .showLess {
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 0 0 transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg-variant);
+    transition: all 0.3s ease;
+}
+
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     #dark .about__container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -113,9 +181,6 @@ overflow: hidden;
     #dark .about__me {
         width: 50%;
         margin: 2rem auto 4rem;
-    }
-    #dark .about__content p {
-        margin: 1rem 0 1.5rem;
     }
     /* LIGHT */
     #light .about__container {
@@ -126,12 +191,9 @@ overflow: hidden;
         width: 50%;
         margin: 2rem auto 4rem;
     }
-    #light .about__content p {
-        margin: 1rem 0 1.5rem;
-    }
 }
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     #dark .about__me {
         width: 65%;
         margin: 0 auto 3rem;
@@ -139,12 +201,6 @@ overflow: hidden;
     #dark .about__cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-    }
-    #dark .about__content {
-        text-align: center;
-    }
-    #dark .about__content p {
-        margin: 1.5rem 0;
     }
     /* LIGHT */
     #light .about__me {
@@ -155,11 +211,11 @@ overflow: hidden;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    #light .about__content {
-        text-align: center;
+    .about__text {
+        margin-bottom: 170%;
     }
-    #light .about__content p {
-        margin: 1.5rem 0;
+    .about__text.partlyShown {
+        margin-bottom: 0%;
     }
 }
 /* ================== End Of About ===================== */

@@ -36,13 +36,13 @@ header {
     bottom: 3rem;
 }
 #dark .header__socials::after {
-    content: '';
+    content: "";
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
 }
 #light .header__socials::after {
-    content: '';
+    content: "";
     width: 1px;
     height: 2rem;
     background: var(--color-primary-lmode);
@@ -57,7 +57,7 @@ header {
     transform: translate(-50%);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
-    padding: 5rem 1.5rem 1.5rem 1.5rem ;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 /* ====== SCROLL DOWN ====== */
 
@@ -81,20 +81,30 @@ header {
 #light .container.header__container h5 {
     color: var(--color-white-lmode);
 }
+.react-typewriter-text {
+    text-align: center !important;
+}
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
-@media screen and (max-width:1024px) {
-    .header{
+@media screen and (max-width: 1024px) {
+    .header {
         height: 68vh;
-    } 
+    }
 }
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
-@media screen and (max-width:600px) {
-    .header{
+@media screen and (max-width: 600px) {
+    .header {
         height: 100vh;
-    } 
-    .header__socials , 
+    }
+    .header__socials,
     .scroll__down {
         display: none;
+    }
+    .header__container {
+        justify-content: flex-start;
+    }
+    .react-typewriter-text {
+        text-align: center !important;
+        font-size: 1.8rem;
     }
 }
 /* ================== End Of Header ===================== */

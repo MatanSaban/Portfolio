@@ -1,125 +1,123 @@
-/* ================== Experience ===================== */
-#dark .experience__container {
+/* ================== skills ===================== */
+#dark .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
-#dark .experience__container > div {
+#dark .skills__container > div {
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
-#dark .experience__container > div:hover {
+#dark .skills__container > div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
 }
-#dark .experience__container div h3 {
+#dark .skills__container div h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary);
 }
-#dark .experience__content {
+#dark .skills__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
-#dark .experience__details {
+#dark .skills__details {
     display: flex;
     gap: 1rem;
 }
-#dark .experience__details svg {
+#dark .skills__details svg {
     margin-top: 6px;
     color: var(--color-primary);
 }
 
-
 /* LIGHT */
 
-#light .experience__container {
+#light .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
-#light .experience__container > div {
+#light .skills__container > div {
     background: var(--color-bg-variant-lmode);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
-#light .experience__container > div:hover {
+#light .skills__container > div:hover {
     background: transparent;
     border-color: var(--color-primary-variant-lmode);
 }
-#light .experience__container div h3 {
+#light .skills__container div h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary-lmode);
 }
-#light .experience__content {
+#light .skills__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
-#light .experience__details {
+#light .skills__details {
     display: flex;
     gap: 1rem;
 }
-#light .experience__details svg {
+#light .skills__details svg {
     margin-top: 6px;
     color: var(--color-primary-lmode);
 }
 
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
-@media screen and (max-width:1024px) {
-    #dark .experience__container {
+@media screen and (max-width: 1024px) {
+    #dark .skills__container {
         grid-template-columns: 1fr;
     }
-    #dark .experience__container > div {
+    #dark .skills__container > div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
-    #dark .experience__content {
+    #dark .skills__content {
         padding: 1rem;
     }
-    #light .experience__container {
+    #light .skills__container {
         grid-template-columns: 1fr;
     }
-    #light .experience__container > div {
+    #light .skills__container > div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
-    #light .experience__content {
+    #light .skills__content {
         padding: 1rem;
     }
 }
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
-@media screen and (max-width:600px) {
-    #dark section#experience {
+@media screen and (max-width: 600px) {
+    #dark section#skills {
         margin-top: 12rem;
     }
-    #dark .experience__container {
+    #dark .skills__container {
         gap: 1rem;
     }
-    #dark .experience__container > div {
+    #dark .skills__container > div {
         width: 100%;
         padding: 2rem 1rem;
     }
-    #light section#experience {
+    #light section#skills {
         margin-top: 12rem;
     }
-    #light .experience__container {
+    #light .skills__container {
         gap: 1rem;
     }
-    #light .experience__container > div {
+    #light .skills__container > div {
         width: 100%;
         padding: 2rem 1rem;
     }
 }
 
-
-/* ================== End Of Experience ===================== */
+/* ================== End Of skills ===================== */

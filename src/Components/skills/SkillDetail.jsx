@@ -1,7 +1,7 @@
 
-const ExpDetail = (props) => {
+const SkillDetail = (props) => {
     return ( 
-        <article className='experience__details'>
+        <article className='skills__details'>
             {props.icon}
             <div>
                 <h4>{props.title}</h4>
@@ -12,4 +12,4 @@ const ExpDetail = (props) => {
      );
 }
  
-export default ExpDetail;
+export default SkillDetail;

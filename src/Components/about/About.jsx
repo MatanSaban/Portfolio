@@ -1,9 +1,7 @@
 import "./about.css";
 import ME from "../../assets/profileimage.jpg";
 import { FiAward } from "react-icons/fi";
-import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import { BsTelephoneOutbound } from "react-icons/bs";
 import AboutCard from "./AboutCard";
 import { useRef, useState } from "react";
 import { useInViewport } from "react-in-viewport";
@@ -47,7 +45,7 @@ const About = (props) => {
                             expDetailed={"5+ Completed"}
                         />
                     </div>
-                    <div className={readMore ? 'about__text' : 'about__text partlyHiddenText'}>
+                    <div className={readMore ? 'about__text': 'about__text partlyShown' }>
                         <p>
                             Hi, I'm Matan Saban And I am a Web Developer.<br/>
                             My first step in the internet started at 2004 when I was only 10 years old and got my first computer<br/>
@@ -63,10 +61,10 @@ const About = (props) => {
                             After that, we started to learn React, Node.js, working with MongoDB and Python.<br/>
                             We learned how to build server with Python and Nodejs, created websites that works with external API's and more.<br/>
                         </p>
-                    {!readMore ? <button onClick={readMoreFunc} className="readMore">Read More..</button> : <button onClick={readMoreFunc} className="hideText">Hide Text</button>}
+                        <button onClick={readMoreFunc} className={readMore ? 'showLess' : 'showMore'}>{readMore ? 'Show Less' : 'Show More'}</button>
                     </div>
                     <a href="#contact" className="btn btn-primary">
-                        Let's Talk <BsTelephoneOutbound />
+                        Let's Talk
                     </a>
                 </div>
             </div>
