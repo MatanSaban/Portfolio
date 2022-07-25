@@ -6,6 +6,7 @@ const PortfolioItem = (props) => {
                 style={{
                     background: `url(${props.imageSrc})`,
                     backgroundPosition: "center",
+                    backgroundSize:'contain',
                     height: "500px",
                     display: "flex",
                     flexDirection: "column",
