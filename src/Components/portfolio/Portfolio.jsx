@@ -1,5 +1,7 @@
 import "./portfolio.css";
 import blackjack from "../../assets/blackjack.png";
+import Ezd from "../../assets/easydigital.png";
+import TDB from "../../assets/TodoBomb.png";
 import IMG from "../../assets/profileimage.jpg";
 import PortfolioItem from "./PortfolioItem";
 import { useRef } from "react";
@@ -40,9 +42,27 @@ const Portfolio = (props) => {
                             github={"https://github.com/MatanSaban/BlackJackGame"}
                             liveDemo={"https://blackjackmatan.herokuapp.com/"}
                             description={'A BlackJack Game Against The Computer'}
-                        />
+                            />
                     </SwiperSlide>
                     <SwiperSlide>
+                        <PortfolioItem
+                            imageSrc={TDB}
+                            title={"TodoBomb"}
+                            github={"https://github.com/MatanSaban/TodoProject"}
+                            liveDemo={"https://todobomb.herokuapp.com/"}
+                            description={'A To-do Application that pulls data from API and let you insert your own data.'}
+                            />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <PortfolioItem
+                            imageSrc={Ezd}
+                            title={"Easy Digital Website"}
+                            github={"https://github.com/MatanSaban/ezdigital"}
+                            liveDemo={"https://ezd.co.il"}
+                            description={'A Digital Agency static website'}
+                        />
+                    </SwiperSlide>
+                    {/* <SwiperSlide>
                         <PortfolioItem
                             imageSrc={IMG}
                             title={"This is a portfolio item title"}
@@ -57,23 +77,7 @@ const Portfolio = (props) => {
                             github={"https://github.com/matansaban"}
                             liveDemo={"https://github.com"}
                         />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <PortfolioItem
-                            imageSrc={IMG}
-                            title={"This is a portfolio item title"}
-                            github={"https://github.com/matansaban"}
-                            liveDemo={"https://github.com"}
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <PortfolioItem
-                            imageSrc={IMG}
-                            title={"This is a portfolio item title"}
-                            github={"https://github.com/matansaban"}
-                            liveDemo={"https://github.com"}
-                        />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                 </Swiper>
             </div>
         </section>

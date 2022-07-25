@@ -53,7 +53,7 @@ const Header = (props) => {
                 <TypeWriterEffect
                     textStyle={{ fontFamily: 'Consolas' }}
                     startDelay={8500}
-                    cursorColor="black"
+                    cursorColor="transparent"
                     text="HTML | CSS | JS | React | Node.js | PHP | Python | MySQL | MongoDB "
                     typeSpeed={100}
                 />
