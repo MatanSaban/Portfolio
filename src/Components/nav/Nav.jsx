@@ -4,15 +4,12 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {BsGrid1X2} from 'react-icons/bs'
 import {BiMessageSquareDetail} from 'react-icons/bi'
-import {RiServiceLine} from 'react-icons/ri'
-import {BsChatQuote} from 'react-icons/bs'
 import { useEffect, useState } from 'react'
 
 
 const Nav = (props) => {
 
     const [activeNav, setActiveNav] = useState('header');
-    
 
     useEffect(() => {
         setActiveNav(props.sectionOnScroll);
